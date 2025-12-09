@@ -4,126 +4,128 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* AURA Semantic Tokens - Light Mode using AURA color system */
-  /* Background: White (AURA White 100%) */
+  /* Using ONLY AURA tokens from JSON - Light Mode */
+  /* AURA Background Paper Light Level 0 = White */
   --background: oklch(1 0 0);
-  /* Foreground: Black (AURA Black 100%) */
+  /* AURA Text Primary = Black 100% */
   --foreground: oklch(0 0 0);
 
-  /* Card: White */
+  /* AURA Paper Light Level 1 = White */
   --card: oklch(1 0 0);
   --card-foreground: oklch(0 0 0);
 
+  /* AURA Paper Light Level 2 = White */
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0 0 0);
 
-  /* Primary: AURA Violet 500 (#7d2eff) */
-  --primary: oklch(0.55 0.28 285);
+  /* AURA Violet 500 (#7d2eff) - Main Brand Color */
+  --primary: oklch(0.548 0.277 285.33);
   --primary-foreground: oklch(1 0 0);
 
-  /* Secondary: AURA Grey 600 (#566581) */
-  --secondary: oklch(0.45 0.02 260);
-  --secondary-foreground: oklch(1 0 0);
+  /* AURA Grey 100 (#e7eaef) */
+  --secondary: oklch(0.93 0.008 260);
+  --secondary-foreground: oklch(0 0 0);
 
-  /* Muted: AURA Grey 50 (#f9fafb) */
+  /* AURA Grey 50 (#f9fafb) */
   --muted: oklch(0.985 0.002 260);
-  /* Muted Foreground: AURA Black 64% */
-  --muted-foreground: oklch(0.5 0 0);
+  /* AURA Text Secondary = Black 64% */
+  --muted-foreground: oklch(0.64 0 0);
 
-  /* Accent: AURA Violet 500 */
-  --accent: oklch(0.55 0.28 285);
+  /* AURA Violet 500 (#7d2eff) */
+  --accent: oklch(0.548 0.277 285.33);
   --accent-foreground: oklch(1 0 0);
 
-  /* Destructive: AURA Red 700 (#e40c2c) */
-  --destructive: oklch(0.52 0.24 25);
+  /* AURA Red 700 (#e40c2c) */
+  --destructive: oklch(0.518 0.239 24.36);
   --destructive-foreground: oklch(1 0 0);
 
-  /* Border: AURA Black 56% opacity */
-  --border: oklch(0.65 0 0);
-  /* Input: AURA Grey 100 (#e7eaef) */
-  --input: oklch(0.93 0.005 260);
-  /* Ring: AURA Violet 500 */
-  --ring: oklch(0.55 0.28 285);
+  /* AURA Divider Light = Black 8% */
+  --border: oklch(0.92 0 0);
+  /* AURA Grey 200 (#d0d4db) */
+  --input: oklch(0.86 0.008 260);
+  /* AURA Violet 500 for focus rings */
+  --ring: oklch(0.548 0.277 285.33);
 
-  /* Chart colors using AURA palette */
-  --chart-1: oklch(0.55 0.28 285);
-  --chart-2: oklch(0.65 0.17 160);
-  --chart-3: oklch(0.75 0.19 80);
-  --chart-4: oklch(0.45 0.25 300);
-  --chart-5: oklch(0.7 0.22 35);
+  /* Chart colors using AURA Violet palette */
+  --chart-1: oklch(0.548 0.277 285.33); /* Violet 500 */
+  --chart-2: oklch(0.625 0.267 285.33); /* Violet 400 */
+  --chart-3: oklch(0.701 0.254 285.33); /* Violet 300 */
+  --chart-4: oklch(0.779 0.239 285.33); /* Violet 200 */
+  --chart-5: oklch(0.441 0.277 285.33); /* Violet 600 */
 
+  /* AURA Border Radius = 8px */
   --radius: 0.5rem;
 
-  /* Sidebar tokens */
+  /* Sidebar tokens using AURA system */
   --sidebar: oklch(1 0 0);
   --sidebar-foreground: oklch(0 0 0);
-  --sidebar-primary: oklch(0.55 0.28 285);
+  --sidebar-primary: oklch(0.548 0.277 285.33);
   --sidebar-primary-foreground: oklch(1 0 0);
   --sidebar-accent: oklch(0.985 0.002 260);
   --sidebar-accent-foreground: oklch(0 0 0);
-  --sidebar-border: oklch(0.65 0 0);
-  --sidebar-ring: oklch(0.55 0.28 285);
+  --sidebar-border: oklch(0.92 0 0);
+  --sidebar-ring: oklch(0.548 0.277 285.33);
 }
 
 .dark {
-  /* AURA Semantic Tokens - Dark Mode using AURA color system */
-  /* Background: AURA Grey 950 (#0f121b) */
-  --background: oklch(0.12 0.01 260);
-  /* Foreground: AURA White 100% */
+  /* Using ONLY AURA tokens from JSON - Dark Mode */
+  /* AURA Background Paper Dark Level 0 (#0f121b) */
+  --background: oklch(0.12 0.015 260);
+  /* AURA Text Primary = White 100% */
   --foreground: oklch(1 0 0);
 
-  /* Card: AURA paper dark mode level 1 (#13191F) */
-  --card: oklch(0.14 0.01 260);
+  /* AURA Paper Dark Level 1 (#13191F) */
+  --card: oklch(0.14 0.015 260);
   --card-foreground: oklch(1 0 0);
 
-  /* Popover: AURA paper dark mode level 2 (#161C24) */
-  --popover: oklch(0.15 0.01 260);
+  /* AURA Paper Dark Level 2 (#161C24) */
+  --popover: oklch(0.16 0.015 260);
   --popover-foreground: oklch(1 0 0);
 
-  /* Primary: AURA Violet 500 (#7d2eff) */
-  --primary: oklch(0.55 0.28 285);
+  /* AURA Violet 500 (#7d2eff) - Main Brand Color */
+  --primary: oklch(0.548 0.277 285.33);
   --primary-foreground: oklch(1 0 0);
 
-  /* Secondary: AURA Grey 400 (#8b99b2) */
-  --secondary: oklch(0.62 0.02 260);
+  /* AURA Grey 900 (#1e2129) */
+  --secondary: oklch(0.18 0.015 260);
   --secondary-foreground: oklch(1 0 0);
 
-  /* Muted: AURA Grey 900 (#1e2129) */
-  --muted: oklch(0.18 0.01 260);
-  /* Muted Foreground: AURA White 64% */
+  /* AURA Grey 900 (#1e2129) */
+  --muted: oklch(0.18 0.015 260);
+  /* AURA Text Secondary = White 64% */
   --muted-foreground: oklch(0.75 0 0);
 
-  /* Accent: AURA Violet 400 (#9860ff) */
-  --accent: oklch(0.6 0.27 285);
+  /* AURA Violet 400 (#9860ff) */
+  --accent: oklch(0.625 0.267 285.33);
   --accent-foreground: oklch(1 0 0);
 
-  /* Destructive: AURA Red 500 (#ff5757) */
-  --destructive: oklch(0.65 0.23 25);
+  /* AURA Red 500 (#ff5757) */
+  --destructive: oklch(0.682 0.23 24.36);
   --destructive-foreground: oklch(1 0 0);
 
-  /* Border: AURA White 56% opacity */
-  --border: oklch(0.35 0.005 260);
-  /* Input: AURA Grey 900 */
-  --input: oklch(0.18 0.01 260);
-  /* Ring: AURA Violet 500 */
-  --ring: oklch(0.55 0.28 285);
+  /* AURA Divider Dark = White 8% */
+  --border: oklch(0.25 0.008 260);
+  /* AURA Grey 800 (#303643) */
+  --input: oklch(0.28 0.015 260);
+  /* AURA Violet 500 for focus rings */
+  --ring: oklch(0.548 0.277 285.33);
 
-  /* Chart colors for dark mode */
-  --chart-1: oklch(0.55 0.28 285);
-  --chart-2: oklch(0.65 0.17 160);
-  --chart-3: oklch(0.75 0.19 80);
-  --chart-4: oklch(0.6 0.27 300);
-  --chart-5: oklch(0.7 0.22 35);
+  /* Chart colors for dark mode using AURA Violet palette */
+  --chart-1: oklch(0.548 0.277 285.33); /* Violet 500 */
+  --chart-2: oklch(0.625 0.267 285.33); /* Violet 400 */
+  --chart-3: oklch(0.701 0.254 285.33); /* Violet 300 */
+  --chart-4: oklch(0.779 0.239 285.33); /* Violet 200 */
+  --chart-5: oklch(0.441 0.277 285.33); /* Violet 600 */
 
-  /* Sidebar tokens for dark mode */
-  --sidebar: oklch(0.14 0.01 260);
+  /* Sidebar tokens for dark mode using AURA system */
+  --sidebar: oklch(0.14 0.015 260);
   --sidebar-foreground: oklch(1 0 0);
-  --sidebar-primary: oklch(0.55 0.28 285);
+  --sidebar-primary: oklch(0.548 0.277 285.33);
   --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.18 0.01 260);
+  --sidebar-accent: oklch(0.18 0.015 260);
   --sidebar-accent-foreground: oklch(1 0 0);
-  --sidebar-border: oklch(0.35 0.005 260);
-  --sidebar-ring: oklch(0.55 0.28 285);
+  --sidebar-border: oklch(0.25 0.008 260);
+  --sidebar-ring: oklch(0.548 0.277 285.33);
 }
 
 @theme inline {
